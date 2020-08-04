@@ -45,6 +45,6 @@ app.put('/images', (req, res) =>{images.HandleEntery(req, res, db) });
 app.post('/images', (req, res) =>{images.HandleApiCall(req, res) });
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Every thing is working fine");
 })
